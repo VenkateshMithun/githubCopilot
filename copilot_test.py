@@ -13,7 +13,7 @@ def get_uptime():
         import subprocess
         output = subprocess.check_output("net stats workstation", shell=True, text=True)
         for line in output.split('\n'):
-            if "Statistics since" in line:
+            if "Mithun Statistics since" in line:
                 print(f"System Uptime: {line.strip()}")
                 break
 
